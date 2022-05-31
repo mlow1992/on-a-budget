@@ -6,8 +6,6 @@ require ('dotenv').config();
 
 const PORT = process.env.PORT || 3001;
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/budget";
-console.log('ENV VAR ', process.env.MONGODB_URI)
-//const MONGODB_URI = 'mongodb+srv://budget-user:691Ydvoswowy0C4L@cluster0.pzvwa.mongodb.net/budget-app?retryWrites=true&w=majority'
 const app = express();
 
 app.use(logger("dev"));
